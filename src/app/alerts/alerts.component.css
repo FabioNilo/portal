@@ -1,0 +1,48 @@
+.alerts-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+ 
+}
+
+.alert-card {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    transition: transform 0.3s ease;
+}
+
+.alert-card:hover {
+    transform: translateY(-5px);
+    animation: pulse 2s infinite;
+}
+
+.alert-red {
+    background-color: #FEE2E2;
+    border-left: 4px solid #EF4444;
+    color: #B91C1C;
+}
+
+.alert-yellow {
+    background-color: #FEF3C7;
+    border-left: 4px solid #F59E0B;
+    color: #B45309;
+}
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+@keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

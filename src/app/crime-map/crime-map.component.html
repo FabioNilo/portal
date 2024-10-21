@@ -1,0 +1,25 @@
+<section id="mapa" class="card">
+    <h2>Mapa de Ocorrências</h2>
+    <div class="form-grid">
+        <select>
+            <option value=""disabled selected>Selecione a Cidade</option>
+            @for(city of cities; track city.id){
+                <option value="">{{city.name}}</option>
+            }
+            
+        </select>
+        <select>
+            <option value="" disabled selected>Escolha um mês</option>
+            @for(month of months; track month.id){
+                <option value="">{{month.name}}</option>
+            }
+            
+        </select>
+        <select>
+            <option value="">Selecione o ano</option>
+        </select>
+    </div>
+    <div id="map" style="height: 400px;"></div>
+
+</section>
+

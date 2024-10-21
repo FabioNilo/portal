@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/leaflet/dist/leaflet.css";
+.alerts-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+ 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3F4F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+}
+
+.container {
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
