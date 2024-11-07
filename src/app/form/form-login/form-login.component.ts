@@ -3,10 +3,11 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-form-login',
   standalone: true,
-  imports: [ReactiveFormsModule,CommonModule],
+  imports: [ReactiveFormsModule, CommonModule],
   templateUrl: './form-login.component.html',
   styleUrl: './form-login.component.css'
 })

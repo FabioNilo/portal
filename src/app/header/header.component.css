@@ -33,6 +33,9 @@ header {
 
 
 /* Botões do header */
+a {
+    text-decoration: none;
+}
 .btn {
     padding: 0.5rem 1rem;
     border-radius: 0.25rem;
@@ -42,7 +45,8 @@ header {
 }
 
 .btn-login {
-    background-color: #ef0c0c;
+    background-color: #0ee8a3;
+    text-decoration: none;
 }
 
 .btn-login:hover {
