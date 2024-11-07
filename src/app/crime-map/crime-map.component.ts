@@ -1,10 +1,13 @@
 import { Component,AfterViewInit, OnInit } from '@angular/core';
 import * as L from 'leaflet';
+import { FooterComponent } from '../footer/footer.component';
+import { HeaderComponent } from '../header/header.component';
+import { RouterModule, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-crime-map',
   standalone: true,
-  imports: [],
+  imports: [FooterComponent,HeaderComponent, RouterOutlet,RouterModule],
   templateUrl: './crime-map.component.html',
   styleUrl: './crime-map.component.css'
 })

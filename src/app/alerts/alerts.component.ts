@@ -12,4 +12,6 @@ export class AlertsComponent {
   title= input<string>()
   message = input<string>()
   alertType = input<string>()
+
+  
 }

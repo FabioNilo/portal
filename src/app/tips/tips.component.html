@@ -1,0 +1,16 @@
+<div class="alerts-grid">
+    <app-alerts 
+  title="Alerta de Segurança Pública" 
+  message="Aumento de furtos no centro da cidade. Reforce sua atenção."
+  alertType="alert-red" />
+  <app-alerts 
+     title="Alerta de Defesa Civil" 
+      message="Previsão de chuvas intensas nas próximas 24h. Evite áreas de risco."
+      alertType="alert-yellow"
+  />
+  
+  </div>
+<div class="card">
+    <h2>{{ currentTip?.title }}</h2>
+    <p>{{ currentTip?.tip }}</p>
+</div>

@@ -1,0 +1,130 @@
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <h1>Bem vindo</h1>
+  <p>Preencha os campos abaixo para aproveitar o máximo nosso Portal 🚀</p>
+
+  <div class="control">
+    <label for="email">Email</label>
+    <input id="email" type="email" name="email" formControlName="email" />
+  </div>
+  <!-- nasted formGrup -->
+  <div class="control-row" formGroupName="passwords">
+    <div class="control">
+      <label for="password">Senha</label>
+      <input
+        id="password"
+        type="password"
+        name="password"
+        formControlName="password"
+      />
+    </div>
+
+    <div class="control">
+      <label for="confirm-password">Confirme Senha</label>
+      <input
+        id="confirm-password"
+        type="password"
+        name="confirm-password"
+        formControlName="confirmPassword"
+      />
+    </div>
+  </div>
+
+  <hr />
+
+  <div>
+    <div class="control-row">
+      <div class="control">
+        <label for="first-name">Primeiro Nome</label>
+        <input
+          type="text"
+          id="first-name"
+          name="first-name"
+          formControlName="firstName"
+        />
+      </div>
+
+      <div class="control">
+        <label for="last-name">último nome</label>
+        <input
+          type="text"
+          id="last-name"
+          name="last-name"
+          formControlName="lastName"
+        />
+      </div>
+    </div>
+    <div>
+      <div class="control-row">
+        <div class="control">
+          <label for="last-name">CPF</label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            formControlName="cpf"
+          />
+        </div>
+        <div class="control">
+          <label for="last-name">Data de Nascimento</label>
+          <input
+            type="date"
+            id="date"
+            name="date"
+            formControlName="date"
+          />
+        </div>
+      </div>
+    </div>
+
+    <fieldset formGroupName="adress">
+      <legend>Seu Endereço</legend>
+
+      <div class="control-row">
+        <div class="control">
+          <label for="street">Rua</label>
+          <input type="text" id="street" name="street"  formControlName="street" />
+        </div>
+
+        <div class="control">
+          <label for="number">Número</label>
+          <input type="text" id="number" name="number"  formControlName="number" />
+        </div>
+      </div>
+
+      <div class="control-row">
+        <div class="control">
+          <label for="postal-code">CEP</label>
+          <input type="text" id="postal-code" name="postal-code"  formControlName="postalCode"/>
+        </div>
+
+        <div class="control">
+          <label for="city">Cidade</label>
+          <input type="text" id="city" name="city"  formControlName="city" />
+        </div>
+      
+      </div>
+      
+    </fieldset>
+  </div>
+
+  <hr />
+
+  <div class="control-row">
+    <div class="control">
+      <label for="terms-and-conditions">
+        <input
+          type="checkbox"
+          id="terms-and-conditions"
+          name="terms"
+          formControlName="agree"
+        />
+        Você concorda com os termos e condições.
+      </label>
+    </div>
+  </div>
+
+  <p class="form-actions">
+    <button type="button" class="button button-flat" (click)="onReset()">Limpar</button>
+    <button type="submit" class="button">Registrar</button>
+  </p>
+</form>

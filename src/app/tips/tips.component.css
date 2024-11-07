@@ -1,0 +1,28 @@
+.card {
+    background-color: rgba(236, 239, 232, 0.992);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; 
+    margin: 30px 400px;
+    text-align: center;
+    border-left: 10px solid #88110d;
+    border-right: 10px solid #88110d;
+}
+
+.card:hover {
+        transform: translateY(-5px);
+        animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

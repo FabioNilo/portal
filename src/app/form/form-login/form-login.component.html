@@ -1,0 +1,44 @@
+<div class="main-login">
+  <div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="login-form">
+      
+      
+        <label for="email">Email:</label>
+        <input type="email" 
+        id="email" 
+        formControlName="email" 
+        class="form-control" 
+        [ngClass]="{ 'is-invalid': submitted && f['email'].errors }"/>
+        @if(submitted && f['email'].errors) {
+            <div  class="invalid-feedback">
+                @if(f['email'].errors['required']){<div >Email é obrigatório.</div>}
+                @if(f['email'].errors['email']){<div >Email é invalido.</div>}
+            </div>
+          }
+  
+
+      
+        <label for="password">Senha</label>
+        <input type="password" 
+        id="password" 
+        formControlName="password" 
+        class="form-control" 
+        [ngClass]="{ 'is-invalid': submitted && f['password'].errors }"/>
+        @if(submitted && f['passwords'].errors){
+            <div class="invalid-feedback">
+                @if(f['passwords'].errors['required']){<div>Senha é obrigatória.</div>}
+                @if(f['passwords'].errors['minlenght']){<div>Senha deve ter no mínimo 6 caracteres.</div>}
+            </div>
+        }
+
+        <div class="login-buttons">
+          <input type="checkbox" id="remember-me">
+          <label for="remember-me">Lembrar</label>
+          <button type="submit" class="btn">Entrar</button>
+      </div>
+      <a href="#" class="forgot-password">Esqueci minha senha</a>
+    </form>
+    <a href="#" class="create-login">Ainda não tem cadastro? Cadastre-se</a>
+  </div>
+</div> 
