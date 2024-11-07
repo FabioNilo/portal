@@ -24,7 +24,6 @@ function equalValues(controlName1: string, controlName2: string) {
 })
 export class RegisterComponent {
   
-  estados = ['AC', 'AL', 'AP', 'AM', 'BA', 'CE', 'DF', 'ES', 'GO', 'MA', 'MT', 'MS', 'MG', 'PA', 'PB', 'PR', 'PE', 'PI', 'RJ', 'RN', 'RS', 'RO', 'RR', 'SC', 'SP', 'SE', 'TO'];
 
   form = new FormGroup({
     email : new FormControl('', {
@@ -42,19 +41,14 @@ export class RegisterComponent {
   ),
     firsName: new FormControl('',{validators:[Validators.required]}),
     lastName: new FormControl('',{validators:[Validators.required]}),
+    cpf: new FormControl('',{validators:[Validators.required]}),
+    date: new FormControl('',{validators:[Validators.required]}),
     adress: new FormGroup({
       street: new FormControl('',{validators:[Validators.required]}),
       number: new FormControl('',{validators:[Validators.required]}),
       postalCode: new FormControl('',{validators:[Validators.required]}),
      city: new FormControl('',{validators:[Validators.required]}),
     }),
-    source: new FormArray([
-      new FormControl(false),
-      new FormControl(false),
-      new FormControl(false),
-    ]),
-    role: new FormControl<'student'| 'teacher'| 'employee'|'founder'| 
-    'other'>('student', {validators:[Validators.required]} ),
     agree: new FormControl(false, {validators:[Validators.required]}),
   })
 
