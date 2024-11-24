@@ -1,5 +1,5 @@
 header {
-    background-color: #1D4ED8;
+    background-color: #04244C;
     color: white;
     padding: 1rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -31,8 +31,6 @@ header {
     font-weight: bold;
 }
 
-
-/* Botões do header */
 a {
     text-decoration: none;
 }
@@ -48,9 +46,16 @@ a {
     background-color: #0ee8a3;
     text-decoration: none;
 }
+.btn-logout {
+    background-color: #d14121;
+    text-decoration: none;
+}
 
 .btn-login:hover {
     background-color: #059669;
+}
+.btn-logout:hover {
+    background-color:#98270e;
 }
 
 .btn-register {
@@ -61,9 +66,9 @@ a {
     background-color: #D97706;
 }
 
-/* Navegação */
+
 nav {
-    background-color: #1E40AF;
+    background-color: #0000A8;
     color: white;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }

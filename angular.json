@@ -23,10 +23,13 @@
             "assets": [
               {
                 "glob": "**/*",
-                
-                  "input": "./node_modules/leaflet/dist/images",
-                   "output": "assets/"
-              }
+                "input": "./node_modules/leaflet/dist/images",
+                 "output": "assets/"
+              },
+              
+                "src/assets",
+                "src/logo.png"
+              
             ],
             "styles": [
               "src/styles.css",
